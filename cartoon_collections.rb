@@ -1,14 +1,27 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(dwarves_array)
+  new_array = []
+  dwarves_array.each_with_index do |a_name, a_number|
+    new_array << "#{a_number + 1}  #{a_name}"
+end 
+puts new_array
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(elements_array)
+ new_array = []
+  elements_array.map do |x|
+  new_array << "#{x.capitalize!}!"
+  end 
+  new_array
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(call_check)
+l_o_l = call_check.all? do |x| 
+x.length > 4
+return true 
 end
+return l_o_l
+end
+
 
 def find_the_cheese# code an argument here
   # the array below is here to help
