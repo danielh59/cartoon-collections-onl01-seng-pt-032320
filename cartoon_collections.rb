@@ -15,11 +15,12 @@ def summon_captain_planet(elements_array)
 end
 
 def long_planeteer_calls(call_check)
-l_o_l = call_check.all? do |x| 
+ if call_check.any? do |x| 
 x.length > 4
 return true 
+else false 
+  x += 1
 end
-return l_o_l
 end
 
 
