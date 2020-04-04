@@ -20,7 +20,6 @@ def long_planeteer_calls(call_check)
 return true 
 else
   false 
-  x += 1
 end
 end
 
