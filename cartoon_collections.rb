@@ -23,7 +23,6 @@ else
   false 
   x += 1
 end
-call_check
 end
 
 
